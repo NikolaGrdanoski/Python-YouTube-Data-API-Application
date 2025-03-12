@@ -10,9 +10,6 @@ import google_auth_oauthlib.flow
 import googleapiclient.discovery
 import googleapiclient.errors
 
-import json
-import pprint
-
 import tkinter
 import tkinter.messagebox
 
@@ -148,8 +145,7 @@ m = tkinter.Tk()
 w = tkinter.Canvas(m, width=700, height=700)
 #w.pack()
 w.configure(background="white")
-canvas_height=1300
-canvas_width=1300
+m.geometry("720x540")
 m.title("My YouTube Data") #naslov na prozorecot
 btn = tkinter.Button(m, text='My Liked Videos', width=25, command=showLikedVideos) #ja povikuva funkcijata sto e vo command delot
 btn.pack(side="top")
